@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">IMC</string>
+
+    <string name="hello_world2">Hello world</string>
+    <string name="imc_app">IMC APP</string>
+    <string name="todo">TODO</string>
+    <string name="man">man</string>
+    <string name="female">female</string>
+    <string name="height">Height</string>
+    <string name="cm">120 cm</string>
+    <string name="cmHeight">%1$s cm</string>
+    <string name="weight">Weight</string>
+    <string name="age">age</string>
+    <string name="calculate">Calculate</string>
+    <string name="recalculate">Recalculate</string>
+    <string name="result">Your result</string>
+
+    <string name="error">Error</string>
+    <string name="low_weight">Low weight</string>
+    <string name="low_weight_description">You have a low weight</string>
+    <string name="medium_weight">Normal weight</string>
+    <string name="medium_weight_description">You have a normal weight</string>
+    <string name="high_weight">High weight</string>
+    <string name="high_weight_description">You have a high weight</string>
+    <string name="fat_weight">Very high weight</string>
+    <string name="fat_weight_description">You have a very high weight</string>
+</resources>
