@@ -1,15 +1,87 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Gradle
+.gradle/
+build/
 local.properties
+*.log
+
+# Android Studio
+.idea/
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries/
+.idea/libraries/
+.idea/modules.xml
+.idea/misc.xml
+.idea/caches/
+.idea/modules/
+.idea/vcs.xml
+.idea/codeStyles/
+.idea/assetWizardSettings.xml
+.idea/navEditor.xml
+.idea/workspace.xml
+.idea/runConfigurations/
+.idea/fileColors.xml
+.idea/inspectionProfiles/
+.idea/scopes/
+.idea/shelf/
+.idea/encodings.xml
+
+# Android Studio 3.1+ generated content
+captures/
+.externalNativeBuild/
+.cxx/
+
+# IntelliJ IDEA
+*.iws
+*.ipr
+
+# Built application files
+*.apk
+*.ap_
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+gen/
+out/
+
+# Gradle Wrapper
+!gradle/wrapper/gradle-wrapper.jar
+
+# Compiled native libraries
+*.o
+*.so
+*.obj
+*.dSYM/
+
+# Proguard
+proguard/
+*.pro
+
+# Android profiling
+*.hprof
+
+# Google Services (JSON file containing API keys and other sensitive information)
+google-services.json
+
+# Android Keystore files (private keys)
+*.jks
+*.keystore
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
