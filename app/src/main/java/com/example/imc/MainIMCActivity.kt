@@ -2,6 +2,7 @@ package com.example.imc
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.imc.databinding.ActivityMainBinding
@@ -29,7 +30,7 @@ class MainIMCActivity : AppCompatActivity() {
 
         initListener()
         initUI()
-        }
+    }
 
     private fun initListener() {
 
@@ -86,12 +87,9 @@ class MainIMCActivity : AppCompatActivity() {
     private fun calculateIMC(): Double {
 
         val df = DecimalFormat("#.##")
-        val imc: Double =
-            currentWeight / (currentHeight.toDouble() / 100 * currentHeight.toDouble() / 100)
+        val height: Double = currentHeight.toDouble() / 100
+        val imc: Double = currentWeight / (height * height)
         return df.format(imc).toDouble()
-
-        // val result = df.format(imc).toFloat()
-        // Log.i("calculate", "el imc es $result")
     }
 
     private fun setAge() {
@@ -110,8 +108,8 @@ class MainIMCActivity : AppCompatActivity() {
 
     private fun setGenderColor() {
 
-        binding.cvMale.setCardBackgroundColor(getBackgroundColor(cvMaleSelected))
-        binding.cvFemale.setCardBackgroundColor(getBackgroundColor(cvFemaleSelected))
+        binding.cvMale.setCardBackgroundColor(getBackgroundColor(isSelectedComponent = cvMaleSelected))
+        binding.cvFemale.setCardBackgroundColor(getBackgroundColor(isSelectedComponent = cvFemaleSelected))
     }
 
     private fun getBackgroundColor(isSelectedComponent: Boolean): Int {
